@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Portfólio</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav main-content"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px 1fr 50px;
+            gap: 20px;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #87ceeb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: #f08080;
+            padding: 10px;
+        }
+
+        .main-content {
+            grid-area: main-content;
+            background-color: #98fb98;
+            padding: 10px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #dcdcdc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">Cabeçalho</header>
+        <nav class="nav">Navegação</nav>
+        <main class="main-content">Conteúdo Principal</main>
+        <footer class="footer">Rodapé</footer>
+    </div>
+<a href="att2Eric.html">volta a Página</a>
+</body>
+</html>
